@@ -1,0 +1,5 @@
+opencv-python
+# please install from pytorch web
+ultralytics
+requests
+pandas
