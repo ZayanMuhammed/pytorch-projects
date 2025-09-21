@@ -58,21 +58,35 @@ Additionally, small Haarcascade XMLs (like `haarcascade_eye.xml`) are kept in th
 
 1. make a virtualenv(optional)
 
-```bash
-python -m venv <environment_name>
-source <environment_name>/bin/activate #(on Linux/macOS)
-source <environment_name>\Scripts\activate #(on Windows).
-```
+   ```bash
+   python -m venv <environment_name>
+   source <environment_name>/bin/activate #(on Linux/macOS)
+   source <environment_name>\Scripts\activate #(on Windows).
+   ```
 
 2. install the libaries
 
-```bash
-pip install -r requirments.txt
-```
+   ```bash
+   pip install -r requirments.txt
+   ```
 
 3.Run the script(in the script folder)
 
-```bash
-python ./vision.py
-```
-4. have fun!!
+   ```bash
+   python ./vision.py
+   ```
+4. (Optional) Ensure your PyTorch installation matches your CUDA version if you want GPU acceleration.
+
+
+## ▶️ Usage
+
+1. Run the main script:
+
+   ```bash
+   python vision.py
+   ```
+
+### 🥸 authors
+
+-- Name: Zayan Muahmmmed
+-- email : zayan.shameermv@gmail.com
