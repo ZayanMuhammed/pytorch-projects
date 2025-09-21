@@ -1,40 +1,61 @@
-PyTorch Vision Project
-This is a lightweight computer vision project using PyTorch and OpenCV, centered around a single script: vision.py.
+# PyTorch Projects
 
-Overview
-The project is designed for basic or experimental vision tasks such as real-time video processing, model inference, or frame-by-frame live view manipulation. It can serve as a foundation for more complex vision applications or just for quick testing with PyTorch and OpenCV.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8.svg?logo=opencv&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Files Included
-vision.py: Main script containing all logic for vision processing.
+> 🧠 A lightweight computer vision playground using **PyTorch** and **OpenCV** for experimenting with models, real-time inference, and vision tasks.
 
-requirements.txt: Lists all necessary dependencies.
+---
 
-Setup & Installation
-To get started, set up a Python environment and install the required libraries using the requirements.txt file. It includes core dependencies like torch and opencv-python.
+## 🚀 Overview
 
-Usage
-After installing the dependencies, you can run vision.py directly. You can modify this script depending on the input source (webcam, image, video file) or the specific vision task you're working on.
+This repository serves as a starting point for computer vision projects.  
+It combines **PyTorch** with **OpenCV** for:
 
-Requirements
-Python 3.x
+- Real-time video or webcam inference  
+- Image classification or detection experiments  
+- Model prototyping with YOLO and Haarcascade  
 
-PyTorch
+---
 
-OpenCV
+## 📂 Project Structure
 
-Other minor packages as listed in requirements.txt
+| File / Folder         | Description |
+|------------------------|-------------|
+| `vision.py`           | Main script for inference and video/image processing. |
+| `requirements.txt`    | Python dependencies for the project. |
+| `.gitignore`          | Files excluded from Git tracking (e.g., model weights). |
+| `clear_cache.py`      | Utility script to clear cache/temp files. |
+| `scripts/`            | Optional helper utilities. |
+| `.vscode/`            | Editor configuration for VSCode. |
 
-Notes
-Make sure PyTorch is installed with CUDA if you're using a GPU.
+---
 
-Webcam or input image/video source is required if applicable.
+## 🎯 Models & Weights
 
-This project is ideal for prototyping small vision tasks or testing models quickly.
+This repo uses pretrained YOLO weights:
 
-License
-Feel free to use, modify, and distribute under your preferred license.
+- `yolov5n.pt`, `yolov5s.pt`, `yolov11n.pt`  
+- `yolov8n.pt`, `yolov8s.pt`, `yolov8m.pt`  
 
-*Installtion*
+⚠️ These files are **large** and excluded from Git (`.gitignore`).  
+If missing, download them directly from [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) or let your code handle automatic downloads.
+
+Additionally, small Haarcascade XMLs (like `haarcascade_eye.xml`) are kept in the repo since they’re tiny and necessary for OpenCV-based detection.
+
+---
+
+## ⚙️ Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/ZayanMuhammed/pytorch-projects.git
+   cd pytorch-projects
+   ```
+
 1. make a virtualenv(optional)
 
 ```bash
@@ -49,7 +70,7 @@ source <environment_name>\Scripts\activate #(on Windows).
 pip install -r requirments.txt
 ```
 
-3.run the script(in the script folder)
+3.Run the script(in the script folder)
 
 ```bash
 python ./vision.py
